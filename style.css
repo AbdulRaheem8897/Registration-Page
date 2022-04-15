@@ -1,0 +1,167 @@
+body {
+    background-color: rgb(189, 187, 183);
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    height: 100%;
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-image {
+    position: absolute;
+    height: 500px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.mockup {
+    height: 500px;
+
+}
+
+.form {
+    width: 100%;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.form-section {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 50px;
+    width: 75%;
+}
+
+.form-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border: 2px solid #a7a7a7;
+    margin: 6px 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(240, 180, 52);
+    padding: 0 20px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    background-color: #F1BE48;
+    outline: none;
+    margin-top: 10px;
+}
+
+.mr-10{
+    margin-right: 10px;
+}
+
+
+.btn:hover {
+  background-color: #1d1d1d;
+    color: #fff;
+
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.btn-twitter {
+    background-color: #00aced;
+    color: white;
+    
+
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+
+    .top-image {
+        height: 300px;
+    }
+
+    .mockup {
+        height: 300px;
+    }
+    
+    .form-section h1 {
+        font-size: 1.5rem;
+    }
+
+    input {
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .btn {
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .btn-facebook {
+        background-color: #3b5998;
+        color: white;
+    }
+
+    .btn-twitter {
+        background-color: #00aced;
+        color: white;
+    }
+
+    .btn:hover {
+        background-color: #1d1d1d;
+        color: #fff;
+    }
+
+    h1 {
+       margin: 0 150px;
+    }
+}
+    
